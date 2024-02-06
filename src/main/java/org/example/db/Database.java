@@ -13,27 +13,27 @@ public class Database {
     return DriverManager.getConnection(url);
   }
 
-  public static void createTable() throws SQLException {
-
-    String sql =
-        """
-                CREATE TABLE IF NOT EXISTS players (
-                	id integer PRIMARY KEY AUTOINCREMENT,
-                	name text NOT NULL,
-                	age integer NOT NULL,
-                	jersey integer NOT NULL,
-                	height integer NOT NULL,
-                	weight integer NOT NULL,
-                	position text NOT NULL,
-                	speed integer NOT NULL,
-                	goal integer NOT NULL,
-                	pass integer NOT NULL
-                );""";
-
-    try (Connection conn = connect()) {
-      stmt = conn.createStatement();
-
-      stmt.execute(sql);
-    }
-  }
+//  public static void createTable() throws SQLException {
+//
+//    String sql =
+//        """
+//                CREATE TABLE IF NOT EXISTS players (
+//                	id integer PRIMARY KEY AUTOINCREMENT,
+//                	name text NOT NULL,
+//                	age integer NOT NULL,
+//                	jersey integer NOT NULL,
+//                	height integer NOT NULL,
+//                	weight integer NOT NULL,
+//                	position text NOT NULL,
+//                	speed integer NOT NULL,
+//                	goal integer NOT NULL,
+//                	pass integer NOT NULL
+//                );""";
+//
+//    try (Connection conn = connect()) {
+//      stmt = conn.createStatement();
+//
+//      stmt.execute(sql);
+//    }
+//  }
 }

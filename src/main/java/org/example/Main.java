@@ -10,8 +10,8 @@ import org.example.vista.PlayerVista;
 
 public class Main {
   public static void main(String[] args) throws SQLException {
-    PlayerModel model = new PlayerModel();
-    PlayerVista vista = new PlayerVista();
+    PlayerModel model = new PlayerModel(); // Esto es el Modelo
+    PlayerVista vista = new PlayerVista(); // Esto es la Vista
 
     PlayerController controller = new PlayerController(model, vista);
 
